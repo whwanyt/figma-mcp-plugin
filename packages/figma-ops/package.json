@@ -1,0 +1,26 @@
+{
+  "name": "@figma-mcp/figma-ops",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "inspect:typings": "tsx scripts/inspect-typings.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@figma-mcp/core": "workspace:*",
+    "@figma-mcp/protocol": "workspace:*"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "catalog:",
+    "ts-morph": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  }
+}

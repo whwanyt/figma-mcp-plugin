@@ -1,0 +1,21 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "tsc && vp build && vp build --config vite.main.config.ts",
+    "preview": "vp preview",
+    "test": "vp test"
+  },
+  "devDependencies": {
+    "@figma-mcp/protocol": "workspace:*",
+    "@figma/eslint-plugin-figma-plugins": "catalog:",
+    "@figma/plugin-typings": "catalog:",
+    "typescript": "~6.0.2",
+    "vite": "catalog:",
+    "vite-plugin-singlefile": "catalog:",
+    "vite-plus": "catalog:"
+  }
+}

@@ -1,0 +1,37 @@
+packages:
+  - apps/*
+  - packages/*
+  - tools/*
+
+catalogMode: prefer
+
+catalog:
+  "@hono/node-server": ^1.19.6
+  "@hono/zod-validator": ^0.7.5
+  "@modelcontextprotocol/sdk": ^1.25.2
+  "@types/node": ^24
+  "@types/ws": ^8.18.1
+  hono: ^4.10.7
+  ts-morph: ^27.0.2
+  tsx: ^4.21.0
+  typescript: ^5
+  vite: npm:@voidzero-dev/vite-plus-core@latest
+  vitest: npm:@voidzero-dev/vite-plus-test@latest
+  vite-plus: latest
+  ws: ^8.18.3
+  zod: ^4.1.13
+  "@figma/eslint-plugin-figma-plugins": "*"
+  "@figma/plugin-typings": "*"
+  vite-plugin-singlefile: ^2.3.3
+overrides:
+  vite: "catalog:"
+  vitest: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: "*"
+    vitest: "*"
+allowBuilds:
+  esbuild: false

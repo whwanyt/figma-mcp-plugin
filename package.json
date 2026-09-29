@@ -1,0 +1,19 @@
+{
+  "name": "figma-mcp-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ready": "vp fmt && vp lint && vp run test -r && vp run build -r",
+    "dev:client": "vp run client#dev",
+    "dev:server": "vp run server#dev",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "vite-plus": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@11.2.2"
+}
